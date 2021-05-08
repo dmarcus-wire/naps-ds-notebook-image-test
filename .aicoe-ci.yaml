@@ -1,0 +1,17 @@
+# https://www.operate-first.cloud/blueprints/continuous-delivery/docs/setup_cd_pipeline.md
+# The AICoE-CI configuration file is to be added to the root of the repository directory and to be named: .aicoe-ci.yaml
+# It allows the user to configure checks, release modules to pypi, build preferences and update imagestream in kustomize yaml file.
+
+check:
+# thoth-pytest: executes python-3.6 pytest.
+  #- thoth-pytest
+# thoth-pytest-py38: executes python-3.8 pytest.
+  #- thoth-pytest-py38
+# thoth-precommit: excute pre-commit checks based on pre-commit-config.yaml.
+  #- thoth-precommit
+# thoth-precommit-py38: execute pre-commit checks based on pre-commit-config.yaml available for python-3.8.
+  #- thoth-precommit-py38
+# thoth-build: execute container image build check. more information on configuring image build requirements: here.
+  #- thoth-build 
+# thoth-custom-build: execute custom pipeline available in the users repository.
+  #- thoth-custom-build
