@@ -4,6 +4,10 @@ set -x
 
 set -eo pipefail
 
+# Upgrade pip
+
+pip install pip --upgrade
+
 # Execute original assemble script.
 
 /opt/app-root/builder/assemble
